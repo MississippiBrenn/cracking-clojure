@@ -5,6 +5,11 @@
   "I don't do a whole lot ... yet."
   [& args]
   (println "Hello, World!"))
+
+
+(defn palindromePermutation 
+[ args]
+(or (=(count args ((count(distinct args)*2))) (=(count args (inc(count (distinct args)*2)))) )) )
   
 (defn isUnique
   [args]
